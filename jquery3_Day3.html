@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Add Element</title>
+
+    <!-- required meta tags-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- external stylesheet-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+	<!-- internal stylesheet-->
+	<style type="text/css">
+
+		#firstdiv{
+            border: 0px solid black;
+        }
+	</style>
+</head>
+<body>
+
+    <div id="firstdiv" class="mx-3 mt-3">
+        <h1>Welcome To Moat Academy</h1>
+        <p>
+        Argument is a special kind of variable used in a subroutine to refer to one of the pieces of data provided as input to the subroutine. These pieces of data are the values of the arguments with which the subroutine is going to be called/invoked. In computer programming, a parameter or a formal argument is a special kind of variable used in a subroutine to refer to one of the pieces of data provided as input to the subroutine. These pieces of data are the values of the arguments with which the subroutine is going to be called/invoked. In computer programming, a parameter or a formal argument is a special kind of variable used in a subroutine to refer to one of the pieces of data provided as input to the subroutine. These pieces of data are the values of the arguments with which the subroutine is going to be called/invoked.
+        </p>
+    </div>
+    <button type="button" class="btn btn-outline-primary" id="btnAppend">APPEND</button>
+    <button type="button" class="btn btn-outline-secondary" id="btnPrepend">PREPEND</button>
+    <button type="button" class="btn btn-outline-warning" id="btnBefore">BEFORE</button>
+    <button type="button" class="btn btn-outline-success" id="btnAfter">AFTER</button>
+    <button type="button" class="btn" id="btnRemove">Remove</button>
+    <button type="button" class="btn" id="btnEmpty">Empty</button>
+
+    <div id="firstdiv" class="mx-3 mt-3">
+        <textarea id="textfeed" class="form-control">
+            
+        </textarea>
+    </div>
+    <div id="result">
+        
+    </div>
+    <button type="button" class="btn btn-info" id="btnPost">Post my comment</button>
+
+    <div>
+        <h3>User's Registration</h3>
+        <div id="user">
+        <label>Adress line 1</label><br>
+        <input type="textarea" name="address"><br>
+        <button type="button" class="btn btn-link" id="remove">remove field</button>
+        </div>
+        <button type="button" class="btn btn-primary mt-3" id="addMore">Add More Fields</button>
+    </div>
+
+
+    <!--jQuery-->
+    <script type="text/javascript" language="Javascript" src="jquery-3.6.0.js"></script>
+
+    <!--JS Files-->
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+	<script type="text/javascript" language="Javascript">
+
+		// $(selector).action()
+        //append element
+        $('#btnAppend').click(function(){
+            $('#firstdiv').append("<h1 style='color:blue'>You have appended me</h1>")
+        })
+
+        //prepend element
+        $('#btnPrepend').click(function(){
+            $('#firstdiv').prepend("<h1 style='color:orange'>You have prepended me</h1>")
+        })
+
+        //after element
+        $('#btnAfter').click(function(){
+            $('#firstdiv').after("<h1 style='color:red'>You have performed an after element on me</h1>")
+        })
+
+        //before element
+        $('#btnBefore').click(function(){
+            $('#firstdiv').before("<h1 style='color:green'><marquee>You have performed another element, but this time it is a before element</marquee></h1>")
+        });
+
+        var counter = 1;
+        $('#btnPost').click(function(){
+            var comment = "<h2>1 Comment</h2>"
+                comment += $('#textfeed').val()
+
+            $('#result').append(comment + counter++)
+        })
+
+        var k=2
+        $('#addMore').click(function(){
+             kk=k++
+            $('#user').append("<br>"+"<label>Adress Line</label> " +kk+"</br>"+"<input type='textarea' name='address' id='address'>"+"<br>"+"<button type='button' class='btn btn-link' id='remove'>remove field</button>");
+        });
+
+        $('#remove').click(function(){
+            $('#').del("<br><label>Adress Line</label></br><input type='textarea' name='address'>")
+        })
+
+        $('#btnRemove').click(function(){
+            $('#firstdiv').remove()
+        })
+		
+        $('#btnEmpty').click(function(){
+            $('#firstdiv').empty();
+        })
+	</script>
+
+</body>
+</html>

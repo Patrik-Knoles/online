@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Project Four</title>
+
+    <!-- required meta tags-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- external stylesheet-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+	<!-- internal stylesheet-->
+	<style type="text/css">
+
+		div{
+			border: 0px solid black;
+			min-height: 0px;
+		}
+		h1, h2, h3, h4, p, input{
+
+			color: #F8B30D;
+			font-family: monterchi;
+		}
+
+	</style>
+</head>
+<body>
+   <div class="container-fluid">
+   	<div class="row" style="background-color:#284594; color:#F8B30D">
+    		<div class="col-md-12">
+			    			<nav class="navbar navbar-expand-lg bg navbar-light">
+			  <div class="container-fluid">
+			  	<div>
+			    <a class="navbar-brand" href="#"><img src="images/ST. PATRICK'S.gif" class="image-fluid" width="17%" height="17%"></a>
+			    </div>
+			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			      <span class="navbar-toggler-icon"></span>
+			    </button>
+			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			      <div class="col-md-6" style="margin-left: 250px;">
+			      <form class="d-flex">
+			        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+			        <button class="btn btn-outline-primary" type="submit">Search</button>
+			      </form>
+			     </div>
+			    </div>
+			  </div>
+			</nav>
+    		</div>
+    	</div>
+   <div class="container" style="background-color:">
+
+   	<!-- Header -->
+   	<div class="row mt-3 ">
+   		<div class="col-md-4">
+   			<h1>Subject</h1>
+   		</div>
+   		<div class="col-md-4">
+   			<h1 style="text-align: center;">Score</h1>
+   		</div>
+   		<div class="col-md-4">
+   			<h1 style="text-align: center;">Grade</h1>
+   		</div>
+   	</div>
+
+    <!-- Row One -->
+   	<div class="row mt-3">
+   		<div class="col-md-4">
+   			<h2>English</h2>
+   		</div>
+   		<div class="col-md-4">
+   			<input type="text" name="" id="value1" class="form-control" onmouseout="
+           
+            eng()
+   			
+   			" style="text-align: center; color: #F8B30D">
+   		</div>
+   		<div class="col-md-4">
+   			<input type="text" name="" id="value6" class="form-control" style="text-align: center; color: #F8B30D; font-family: valencia;">
+   		</div>
+   	</div>
+
+    <!-- Row Two -->
+   	<div class="row mt-3">
+   		<div class="col-md-4">
+   			<h2 >Maths</h2>
+   		</div>
+   		<div class="col-md-4">
+   			<input type="text" name="" id="value2" class="form-control" onmouseout="
+
+             maths()
+
+   			" style="text-align: center; color: #F8B30D">
+   		</div>
+   		<div class="col-md-4">
+   			<input type="text" name="" id="value7" class="form-control" style="text-align: center; color: #F8B30D">
+   		</div>
+   	</div>
+
+     <!-- Row Three -->
+   	<div class="row mt-3">
+   		<div class="col-md-4">
+   			<h2>Chemistry</h2>
+   		</div>
+   		<div class="col-md-4">
+   			<input type="text" name="" id="value3" class="form-control" onmouseout="
+
+             chem()
+
+   			" style="text-align: center; color: #F8B30D">
+   		</div>
+   		<div class="col-md-4">
+   			<input type="text" name="" id="value8" class="form-control" style="text-align: center; color: #F8B30D">
+   		</div>
+   	</div>
+
+    <!-- Row Four -->
+   	<div class="row mt-3">
+   		<div class="col-md-4">
+   			<h2>Biology</h2>
+   		</div>
+   		<div class="col-md-4">
+   			<input type="text" name="" id="value4" class="form-control" onmouseout="
+
+             bio()
+
+   			" style="text-align: center; color: #F8B30D">
+   		</div>
+   		<div class="col-md-4">
+   			<input type="text" name="" id="value9" class="form-control" style="text-align: center; color: #F8B30D">
+   		</div>
+   	</div>
+
+    <!-- Row Five -->
+   	<div class="row mt-3">
+   		<div class="col-md-4">
+   			<h2>French</h2>
+   		</div>
+   		<div class="col-md-4">
+   			<input type="text" name="" id="value5" class="form-control" onmouseout="
+
+             fre()
+
+   			" style="text-align: center; color: #F8B30D">
+   		</div>
+   		<div class="col-md-4">
+   			<input type="text" name="" id="value10" class="form-control" style="text-align: center; color: #F8B30D">
+   		</div>
+   	</div>
+   	<!--   END OF FORM  -->
+
+
+   	 <!-- Row Five -->
+   	<div class="row mt-3" style="justify-content: space-between;">
+   		<div class="col-md-3">
+   			
+   		</div>
+   		<div class="col-md-3">
+   			<button type="button" class="mx-5 btn-lg btn-outline-primary" onclick="
+
+            button()
+
+   			">Get Result</button>
+   		</div>
+   		<div class="col-md-3">
+   			
+   		</div>
+   	</div>
+
+   	<!-- second part -->
+   	<div class="row mt-3">
+   		<div class="col-md-3">
+   			<h2>Total :</h2><p id="total"></p>
+   		</div>
+   		<div class="col-md-3">
+   			<p id="totalfigure" style="font-size:30px; color: #F8B30D;"></p>
+   		</div>
+   	</div>
+
+   	
+
+   	<!-- Average -->
+   	<div class="row mt-3">
+   		<div class="col-md-3">
+   			<h2>Average :</h2><p id="av1"></p>
+   		</div>
+   		<div class="col-md-3">
+   			<p id="av2" style="font-size:30px; color: #F8B30D;"></p>
+   		</div>
+   	</div>
+
+   	<!-- Remarks -->
+   	<div class="row mt-3">
+   		<div class="col-md-3">
+   			<h2 id="remark1"></h2>
+   		</div>
+   		<div class="col-md-3">
+   			<p id="remark2" style="font-size:30px; color: #F8B30D;"></p>
+   		</div>
+   		<div class="col-md-4">
+   			<p id="img" class="img-fluid"></p>
+   		</div>
+   	</div>
+
+   	<div class="row">
+   			<div class="col-md-12 mt-5">
+   				<p style="font-size: 15px; color: #F8B30D; text-align: center;">&#9734; Designed & Built by Patrick Nwaduba &#9734;</p>
+   			</div>
+   		</div>
+
+   </div>
+</div>
+
+
+
+   <!--JS Files-->
+	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+
+	<script type="text/javascript" language="Javascript">
+		 
+		 function button(){
+
+		 	var value1 = document.getElementById('value1').value;
+		 	var value2 = document.getElementById('value2').value;
+		 	var value3 = document.getElementById('value3').value;
+		 	var value4 = document.getElementById('value4').value;
+		 	var value5 = document.getElementById('value5').value;
+		 	var photo1 = document.getElementById('img');
+		     
+		 	var add = Number(value1) + Number(value2) + Number(value3) + Number(value4) + Number(value5);
+
+		 	document.getElementById('totalfigure').innerHTML = add;
+
+		 	var average = add/5;
+		 	document.getElementById('av2').innerHTML = average;
+
+		 	if (average >= 50) {
+
+		 		document.getElementById('remark1').innerHTML = 'Remark :'
+		 		document.getElementById('remark2').innerHTML = 'you are good to go!'
+		 		
+		 		
+		 	}else {
+		 		document.getElementById('remark1').innerHTML = 'Remark :'
+		 		document.getElementById('remark2').innerHTML = 'Repeat class'
+		 	}
+		 }
+
+		 function eng(){
+
+		 	var value1 = document.getElementById('value1').value;
+
+		 	
+
+		 	if (value1 >= 70 && value1 <= 100) {
+		 		document.getElementById('value6').value = 'A'
+		 	}else if (value1 >= 60 && value1 < 70){
+		 		document.getElementById('value6').value = 'B'
+		 	}else if (value1 >= 50 && value1 < 60){
+		 		document.getElementById('value6').value = 'C'
+		 	}else if (value1 >= 45 && value1 < 50){
+		 		document.getElementById('value6').value = 'D'
+		 	}else if (value1 >= 40 && value1 < 45){
+		 		document.getElementById('value6').value = 'E'
+		 	}else if (value1 == ''){
+		 		document.getElementById('value6').value = 'Enter your score'
+		 	}else{
+		 		
+		 		document.getElementById('value6').value = 'F'
+		 	}
+		 }
+
+		 function maths(){
+
+		 	var value2 = document.getElementById('value2').value;
+		 	
+
+		 	if (value2 >= 70 && value2 <= 100) {
+		 		document.getElementById('value7').value = 'A'
+		 	}else if (value2 >= 60 && value2 < 70){
+		 		document.getElementById('value7').value = 'B'
+		 	}else if (value2 >= 50 && value2 < 60){
+		 		document.getElementById('value7').value = 'C'
+		 	}else if (value2 >= 45 && value2 < 50){
+		 		document.getElementById('value7').value = 'D'
+		 	}else if (value2 >= 40 && value2 < 45){
+		 		document.getElementById('value7').value = 'E'
+		 	}else if (value2 == ''){
+		 		document.getElementById('value7').value = 'Enter your score'
+		 	}else{
+		 		document.getElementById('value7').value = 'F'
+		 	}
+		 }
+
+		 function chem(){
+
+		 	var value3 = document.getElementById('value3').value;
+		 	
+
+		 	if (value3 >= 70 && value3 <= 100) {
+		 		document.getElementById('value8').value = 'A'
+		 	}else if (value3 >= 60 && value3 < 70){
+		 		document.getElementById('value8').value = 'B'
+		 	}else if (value3 >= 50 && value3 < 60){
+		 		document.getElementById('value8').value = 'C'
+		 	}else if (value3 >= 45 && value3 < 50){
+		 		document.getElementById('value8').value = 'D'
+		 	}else if (value3 >= 40 && value3 < 45){
+		 		document.getElementById('value8').value = 'E'
+		 	}else if (value3 == ''){
+		 		document.getElementById('value8').value = 'Enter your score'
+		 	}else{
+		 		document.getElementById('value8').value = 'F'
+		 	}
+		 }
+
+		 function bio(){
+
+		 	var value4 = document.getElementById('value4').value;
+		 	
+
+		 	if (value4 >= 70 && value4 <= 100) {
+		 		document.getElementById('value9').value = 'A'
+		 	}else if (value4 >= 60 && value4 < 70){
+		 		document.getElementById('value9').value = 'B'
+		 	}else if (value4 >= 50 && value4 < 60){
+		 		document.getElementById('value9').value = 'C'
+		 	}else if (value4 >= 45 && value4 < 50){
+		 		document.getElementById('value9').value = 'D'
+		 	}else if (value4 >= 40 && value4 < 45){
+		 		document.getElementById('value9').value = 'E'
+		 	}else if (value4 == ''){
+		 		document.getElementById('value9').value = 'Enter your score'
+		 	}else{
+		 		document.getElementById('value9').value = 'F'
+		 	}
+		 }
+
+		 function fre(){
+
+		 	var value5 = document.getElementById('value5').value;
+		 	
+
+		 	if (value5 >= 70 && value5 <= 100) {
+		 		document.getElementById('value10').value = 'A'
+		 	}else if (value5 >= 60 && value5 < 70){
+		 		document.getElementById('value10').value = 'B'
+		 	}else if (value5 >= 50 && value5 < 60){
+		 		document.getElementById('value10').value = 'C'
+		 	}else if (value5 >= 45 && value5 < 50){
+		 		document.getElementById('value10').value = 'D'
+		 	}else if (value5 >= 40 && value5 < 45){
+		 		document.getElementById('value10').value = 'E'
+		 	}else if (value5 == ''){
+		 		document.getElementById('value10').value = 'Enter your score'
+		 	}else{
+		 		document.getElementById('value10').value = 'F'
+		 	}
+		 }
+
+                    
+	</script>
+</body>
+</html>
